@@ -1,0 +1,20 @@
+<div class="container-fluid">
+  <h2 class="text-center"><b> Quotes Generator</b></h2>
+  <hr>
+  <div class="row">
+    <div class="col-md-4">
+      <app-quote-form (addQuote)="quoteSubmission($event)"></app-quote-form>
+    </div>
+    <div class="col-md-8">
+      <ol type="i">
+        <div *ngFor='let quote of quotes;let position = index'>
+          <li>{{quote.quote}} </li>
+          <button class="btn btn-outline-primary" (click)='toggleDetails(position)'>Quote Details</button> <br>
+
+          <app-quotes-details *ngIf="quote.showDescription" [quotes]='quote' (vote)='upVote($event,position)'
+            (downVotes)='downVote($event,position)' (quoteDelete)='deleteQuote($event,position)'></app-quotes-details>
+        </div>
+      </ol>
+    </div>
+  </div>
+</div>
