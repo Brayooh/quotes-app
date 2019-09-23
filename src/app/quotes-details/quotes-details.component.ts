@@ -14,15 +14,15 @@ export class QuotesDetailsComponent implements OnInit {
   @Output() downVotes = new EventEmitter<boolean>();
   @Output() quoteDelete = new EventEmitter<boolean>();
 
-  
-  deleteQuote(complete:boolean){
+
+  deleteQuote(complete: boolean) {
     this.quoteDelete.emit(complete);
   }
 
-  upVote(countVote:boolean){
+  upVote(countVote: boolean) {
     this.vote.emit(countVote);
   }
-  downVote(countDownVote:boolean){
+  downVote(countDownVote: boolean) {
     this.downVotes.emit(countDownVote);
   }
 

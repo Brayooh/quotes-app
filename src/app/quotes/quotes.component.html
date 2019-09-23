@@ -1,4 +1,3 @@
-
 <div class="container-fluid">
   <h2 class="text-center" style="margin-top: 3vh"><b> QUOTES GENERATOR</b></h2>
   <hr>
@@ -7,7 +6,7 @@
       <app-quote-form (addQuote)="quoteSubmission($event)"></app-quote-form>
     </div>
     <div class="col-md-8" style="margin-top: 2vh">
-        <h3 style="margin-left: 15vh; color: rgb(34, 86, 133)"> YOUR QUOTES</h3> 
+      <h3 style="margin-left: 15vh; color: rgb(34, 86, 133)"> YOUR QUOTES</h3>
       <ol type="i" style="margin-top: 3vh">
         <div *ngFor='let quote of quotes;let position = index'>
           <li>{{quote.quote}} </li>
@@ -19,4 +18,4 @@
       </ol>
     </div>
   </div>
-</div>  ,
+</div> ,
