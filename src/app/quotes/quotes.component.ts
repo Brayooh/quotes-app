@@ -8,8 +8,8 @@ import { Quoties } from '../quotes';
 })
 export class QuotesComponent implements OnInit {
   quotes = [
-    new Quoties(1,"The greatest glory in living lies not in never falling, but in rising every time we fall.","Dr. Suess","Brian",0,0,new Date(2019,0,22)), 
-    new Quoties(2,"Great minds discuss ideas; average minds discuss events; small minds discuss people.","Eleanor Roosevelt","Publisher",0,0,new Date(2019,1,22)),
+     new Quoties(1,"The greatest glory in living lies not in never falling, but in rising every time we fall.","Dr. Suess","Brian",0,0,new Date(2019,0,22)), 
+     new Quoties(2,"Great minds discuss ideas; average minds discuss events; small minds discuss people.","Eleanor Roosevelt","Publisher",0,0,new Date(2019,1,22)),
     
   ]
 
