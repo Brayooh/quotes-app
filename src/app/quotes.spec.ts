@@ -1,7 +1,7 @@
-// import { Quoties } from './quotes';
+import { Quoties } from './quotes';
 
-// describe('quotes', () => {
-//   it('should create an instance', () => {
-//     expect(new Quoties()).toBeTruthy();
-//   });
-// });
+describe('quotes', () => {
+  it('should create an instance', () => {
+    expect(new Quoties()).toBeTruthy();
+  });
+});
